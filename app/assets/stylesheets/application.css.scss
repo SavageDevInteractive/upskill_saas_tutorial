@@ -17,11 +17,11 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-
+//typography
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
-
+//home background gradient
 .home-callout {
       //Gradient provided by @_ighosh at uiGradients.com
     background: #003973; /* fallback for old browsers */
@@ -32,7 +32,7 @@ h1, h2, h3 {
     padding-top: 50px;
     padding-bottom: 100px;
 }
-
+//navbar gradient
 .navbar {
       //Gradient provided by @_ighosh at uiGradients.com
     border: 1px black;
@@ -40,18 +40,12 @@ h1, h2, h3 {
     background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.navbar-default .navbar-brand {
-  color: white;
-}
+//navbar text/ hover color
+.navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: white;
-}
-.navbar-default .navbar-brand:hover {
-  color: white;
-  opacity: 0.75;
-}
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: 0.75;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
